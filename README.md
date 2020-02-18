@@ -1,11 +1,8 @@
 # Prj_SLM_nrf52_client
 
-Sample nRF52 client for NCS Serial_LTE_Modem project  
+Sample nRF52 client for NCS Serial_LTE_Modem project:  
 https://github.com/NordicPlayground/fw-nrfconnect-nrf/tree/master/samples/nrf9160/serial_lte_modem  
-
 NOTE must set the configuration options ``CONFIG_SLM_GPIO_WAKEUP`` and ``CONFIG_SLM_CONNECT_UART_2``.  
-
-The sample client is based on "nRF5_SDK_16.0.0\examples\peripheral\bsp".  
 
 The pin interconnection between nRF91 and nRF52 is presented in the following table:
 
@@ -37,6 +34,12 @@ UART configuration:
     * Baud rate: 115200
     * Parity bit: no
     * Operation mode: IRQ
+
+slm_client: This sample client is based on "nRF5_SDK_16.0.0\examples\peripheral\bsp".  
+  Some hardcoded AT commands could be issued by pushing buttons.
+
+slm_ble_app_uart: This sample client is based on "nRF5_SDK_16.0.0\examplesble_peripheral\ble_app_uart".
+  Connect to the NUS client from nRF Toolbox/UART on Android then issue AT commands from the log window.
 
 Note that the GPIO output level on nRF91 side should be 3 V.
 
