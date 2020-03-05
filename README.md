@@ -6,11 +6,13 @@ https://github.com/NordicPlayground/fw-nrfconnect-nrf/tree/master/samples/nrf916
 NOTE must set the configuration options ``CONFIG_SLM_GPIO_WAKEUP`` and ``CONFIG_SLM_CONNECT_UART_2``.  
 Please follow above link for pin inter-connection.
 
-UART instance in use: 
+UART instance in use:
+
     * nRF52840 and nRF52832 (UART0)
     * nRF9160 (UART2)
 
-UART configuration: 
+UART configuration:
+
     * Hardware flow control: enabled
     * Baud rate: 115200
     * Parity bit: no
