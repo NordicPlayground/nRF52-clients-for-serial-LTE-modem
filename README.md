@@ -1,18 +1,16 @@
-# Prj_SLM_nrf52_client
+# nRF52-clients-for-serial-LTE-modem
 
 Sample nRF52 client for NCS Serial_LTE_Modem project:  
 https://github.com/NordicPlayground/fw-nrfconnect-nrf/tree/master/samples/nrf9160/serial_lte_modem  
-NOTE must set the configuration options ``CONFIG_SLM_GPIO_WAKEUP`` and ``CONFIG_SLM_CONNECT_UART_2``.  
 
+NOTE must set the configuration options ``CONFIG_SLM_GPIO_WAKEUP`` and ``CONFIG_SLM_CONNECT_UART_2``.  
 Please follow above link for pin inter-connection.
 
-UART instance in use:
-
+UART instance in use: 
     * nRF52840 and nRF52832 (UART0)
     * nRF9160 (UART2)
 
-UART configuration:
-
+UART configuration: 
     * Hardware flow control: enabled
     * Baud rate: 115200
     * Parity bit: no
